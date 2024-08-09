@@ -1,55 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        nav {
+            margin-bottom: 20px; /* Espaço entre a barra de navegação e o conteúdo */
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0080c0;
+            font-weight: bold;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fff;
+            background-color: #0080c0;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .tabelas-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #333;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Tabelas</h1>
-
-    <h2>Tabela 1</h2>
-    <table border="1">
-        <tr>
-            <th>Cabeçalho 1</th>
-            <th>Cabeçalho 2</th>
-        </tr>
-        <tr>
-            <td>Dado 1</td>
-            <td>Dado 2</td>
-        </tr>
-    </table>
-
-    <h2>Tabela 2</h2>
-    <table border="1">
-        <tr>
-            <th>Cabeçalho 1</th>
-            <th>Cabeçalho 2</th>
-        </tr>
-        <tr>
-            <td>Dado 1</td>
-            <td>Dado 2</td>
-        </tr>
-    </table>
-
-    <h2>Tabela 3</h2>
-    <table border="1">
-        <tr>
-            <th>Cabeçalho 1</th>
-            <th>Cabeçalho 2</th>
-        </tr>
-        <tr>
-            <td>Dado 1</td>
-            <td>Dado 2</td>
-        </tr>
-    </table>
-
     <nav>
-        <ul>
-            <li><a href="index.html">Página Inicial</a></li>
-            <li><a href="tabelas.html">Tabelas</a></li>
-            <li><a href="imagens.html">Imagens</a></li>
-        </ul>
+        <a href="curriculo.html">Página Inicial</a>
+        <a href="tabelas.html">Tabelas</a>
+        <a href="imagens.html">Imagens</a>
     </nav>
+
+    <div class="tabelas-container">
+        <h1>Tabela Olímpica</h1>
+        <table>
+            <tr>
+                <th colspan="4">Atletas Handebol Feminino 2024</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Gabriela Moreschi</td>
+                    <td>Adriana Cardoso</td>
+                    <td>Bruna de Paula</td>
+                </tr>
+                <tr>
+                    <td>Marcela Arouinian</td>
+                    <td>Giulia Guariero</td>
+                    <td>Jéssica Quintino</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td rowspan="4">Medalhistas Natação:</td>
+                <td>China: Zhang Yufei</td>
+                <td>França: Léon Marchand</td>
+            </tr>
+            <tr>
+                <td>EUA: Torri Huske</td>
+                <td>EUA: Kate Douglass</td>
+            </tr>
+            <tr>
+                <td>Canadá: Summer McIntosh</td>
+                <td>Austrália: Mollie O’Callaghan</td>
+            </tr>
+        </table>
+        <br>
+
+        <table>
+            <tr>
+                <th colspan="6">Medalhistas Brasileiros</th>
+            </tr>
+            <tr>
+                <th rowspan="6">Esportes</th>
+                <td>Beatriz Souza | Judô | +78kg</td>
+                <td>Rebeca Andrade | Ginástica Artística | Solo feminino</td>
+                <td>Caio Bonfim – marcha atlética 20km e revezamento misto.</td>
+                <td>Tatiana Weston-Webb | Surfe</td>
+            </tr>
+            <tr>
+                <td>Larissa Pimenta | Judô | -52kg</td>
+                <td>Rayssa Leal | Skate Street</td>
+                <th rowspan="2">Equipe</th>
+                <td>Brasil | Ginástica Artística | Rebeca Andrade, Flávia Saraiva, Jade Barbosa, Júlia Soares e Lorrane Oliveira</td>
+            </tr>
+            <tr>
+                <td>Bia Ferreira | Boxe | 60kg</td>
+                <td>Gabriel Medina | Surfe</td>
+                <td>Brasil | Judô | Equipes mistas - Beatriz Souza, Rafaela Silva, Larissa Pimenta, Ketleyn Quadros, Daniel Cargnin, Rafael Macedo, Léo Gonçalves, Guilherme Schimidt, Rafael Silva e Willian Lima</td>
+            </tr>
+            <tr>
+                <th colspan="3">Total de medalhas</th>
+                <td>16</td>
+            </tr>
+        </table>
+        <br>
+    </div>
 </body>
+
 </html>

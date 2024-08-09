@@ -3,76 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Currículo - Anna Julya dos Santos da Silva</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
             background-color: #f4f4f4;
-            color: #000; /* Define a cor do texto como preto */
+            padding: 20px;
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0080c0;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+        nav a:hover {
+            color: #fff;
+            background-color: #0080c0;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            color: #3498db;
+            margin-bottom: 10px;
+            text-transform: uppercase;
         }
         h1 {
-            color: #000; /* Garante que o h1 seja preto */
+            font-size: 28px;
+            margin-bottom: 20px;
         }
         h2 {
-            color: #000; /* Garante que o h2 seja preto */
+            font-size: 22px;
+            margin-top: 30px;
         }
         h3 {
-            color: #000; /* Garante que o h3 seja preto */
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        p, ul {
+            margin: 10px 0;
         }
         ul {
             list-style-type: none;
-            padding: 0;
+            padding-left: 0;
         }
         li {
-            margin: 5px 0;
+            margin-bottom: 5px;
         }
-        nav {
-            margin-top: 20px;
-            text-align: center; /* Centraliza o conteúdo do nav */
+        .cabecalho {
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
         }
-        nav ul {
-            display: inline-flex; /* Muda de flex para inline-flex para centralizar */
-            gap: 15px;
+        .cabecalho h1 {
+            margin-bottom: 5px;
         }
-        nav a {
-            text-decoration: none;
-            color: #000; /* Define a cor dos links como preto */
+        .cabecalho p {
+            font-size: 16px;
+            color: #666;
+        }
+        .secao {
+            margin-bottom: 20px;
+        }
+        .secao p {
+            color: #666;
+        }
+        .habilidades ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .habilidades li {
+            background: #3498db;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 14px;
+            display: inline-block;
+        }
+        .experiencia, .educacao {
+            border-left: 3px solid #3498db;
+            padding-left: 15px;
+        }
+        .experiencia ul, .educacao ul {
+            margin-left: 20px;
+        }
+        .experiencia li, .educacao li {
+            margin-bottom: 15px;
+        }
+        .experiencia h4, .educacao h4 {
+            margin: 0;
+            font-weight: normal;
+        }
+        .experiencia p, .educacao p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html">Página Inicial</a></li>
-            <li><a href="tabelas.html">Tabelas</a></li>
-            <li><a href="imagens.html">Imagens</a></li>
-        </ul>
+        <a href="curriculo.html">Página Inicial</a>
+        <a href="tabelas.html">Tabelas</a>
+        <a href="imagens.html">Imagens</a>
     </nav>
-    <h1>Currículo</h1>
-    <h2>Nome: Anna Julya dos Santos da Silva</h2>
-    <p><strong>Descrição:</strong> Linda.</p>
-    
-    <h3>Experiência Profissional</h3>
-    <ul>
-        <li><strong>Nome da Empresa 1</strong> - Cargo (Ano de Início - Ano de Fim)</li>
-        <li><strong>Nome da Empresa 2</strong> - Cargo (Ano de Início - Ano de Fim)</li>
-        <li><strong>Nome da Empresa 3</strong> - Cargo (Ano de Início - Ano de Fim)</li>
-    </ul>
 
-    <h3>Educação</h3>
-    <ul>
-        <li><strong>Escola Mundo Moderno - </strong> (2010 -2014)</li>
-        <li><strong>Escola Sesi - </strong>  (2015 - 2022)</li>
-        <li><strong>Universidade Federal do Espirito Santo - </strong> (2023)</li>
+    <div class="container">
+        <div class="cabecalho">
+            <h1>Anna Julya dos Santos da Silva</h1>
+            <p>Email: najusilva@gmail.com | Telefone: (27) 99785-4785 | Vitória, ES</p>
+        </div>
 
-    </ul>
+        <div class="secao descricao">
+            <h2>Descrição:</h2>
+            <p>Sou uma pessoa proativa, comprometida e responsável. Valorizo a integridade e a transparência em tudo o que faço, e acredito que o sucesso é alcançado por meio de esforço e comprometimento. No meu tempo livre, gosto de nadar, jogar handebol, conversar com amigos e familiares, o que me ajuda a manter um equilíbrio saudável entre vida pessoal e profissional.</p>
+        </div>
 
-    <h3>Habilidades</h3>
-    <ul>
-        <li>Habilidade 1</li>
-        <li>Habilidade 2</li>
-        <li>Habilidade 3</li>
-    </ul>
+        <div class="secao experiencia">
+            <h2>Experiência Profissional:</h2>
+            <ul>
+                <li>
+                    <h3>Inove</h3>
+                    <h4>Estagiária | 2022</h4>
+                </li>
+                <li>
+                    <h3>Vale</h3>
+                    <h4>Estagiária | 2023 - 2024</h4>
+                </li>
+            </ul>
+        </div>
+
+        <div class="secao educacao">
+            <h2>Educação:</h2>
+            <ul>
+                <li>
+                    <h3>Escola Mundo Moderno</h3>
+                    <h4>Ensino Fundamental | 2010 - 2014</h4>
+                </li>
+                <li>
+                    <h3>Escola Sesi</h3>
+                    <h4>Ensino Médio | 2015 - 2022</h4>
+                </li>
+                <li>
+                    <h3>Universidade Federal do Espírito Santo</h3>
+                    <h4>Curso Educação Física | 2023</h4>
+                </li>
+            </ul>
+        </div>
+
+        <div class="secao habilidades">
+            <h2>Habilidades:</h2>
+            <ul>
+                <li>Comunicação</li>
+                <li>Trabalho em equipe</li>
+                <li>Comprometimento</li>
+                <li>Liderança</li>
+                <li>Organização</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
