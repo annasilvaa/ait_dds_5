@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Flamengo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #E20E0E;
+            color: white;
+            padding: 2px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .logo img {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+            flex-grow: 1;
+        }
+
+        .filters {
+            background-color: #fff;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        .filters h3 {
+            margin-bottom: 10px;
+        }
+
+        .filters ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .filters ul li {
+            margin-bottom: 10px;
+        }
+
+        .filters ul li a {
+            color: #E20E0E;
+            text-decoration: none;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-grow: 1;
+        }
+
+        .product {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: calc(33.333% - 40px);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product h4 {
+            margin: 15px 0;
+        }
+
+        .product .price {
+            font-weight: bold;
+            color: #E20E0E;
+        }
+
+        button {
+            background-color: #E20E0E;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #D10C0C;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #E20E0E;
+            color: white;
+            margin-top: auto;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-right: 0;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .container {
+                flex-direction: column;
+                margin: 10px;
+            }
+
+            .filters {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+
+            .products {
+                justify-content: center;
+            }
+
+            .product {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .filters {
+                width: 100%;
+            }
+
+            .products {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Flamengo-RJ_(BRA) (1).png" alt="">
+            <h1>Loja Flamengo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Favoritos</a></li>
+                <li><a href="#">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="filters">
+            <h3>Filtros</h3>
+            <ul>
+                <li><a href="#">Camisas</a></li>
+                <li><a href="#">Acessórios</a></li>
+                <li><a href="#">Promoções</a></li>
+            </ul>
+        </section>
+
+        <section class="products">
+            <div class="product">
+                <img src="img/Camisa_2.avif" alt="Camisa Flamengo 1">
+                <h4>Camisa Oficial Flamengo</h4>
+                <p class="price">R$ 299,90</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="img/treino.jpg" alt="Camisa Flamengo 2">
+                <h4>Camisa Treino Flamengo</h4>
+                <p class="price">R$ 199,90</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="img/ZICO.webp" alt="Camisa Flamengo 3">
+                <h4>Camisa Retrô Flamengo</h4>
+                <p class="price">R$ 249,90</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="img/preta.webp" alt="Camisa Flamengo 4">
+                <h4>Camisa 3ª Edição Flamengo</h4>
+                <p class="price">R$ 279,90</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="img/Camisa_Flamengo_1.avif" alt="Camisa Flamengo 5">
+                <h4>Camisa 2024 Flamengo</h4>
+                <p class="price">R$ 309,90</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="img/goleiro.avif" alt="Camisa Flamengo 6">
+                <h4>Camisa de Goleiro Flamengo</h4>
+                <p class="price">R$ 229,90</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Loja Flamengo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
